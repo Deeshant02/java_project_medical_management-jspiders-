@@ -3,6 +3,7 @@ package Main;
 import java.util.Scanner;
 import password.*;
 import owner.Owner;
+import worker.Workers;
 
 public class Main {	
 	static {
@@ -50,7 +51,8 @@ public class Main {
 				b.ownerSection();
 			}
 			else if(choice==2) {
-//				worker section
+				Workers w = new Workers();
+				w.workerSection();
 			}
 			else if(choice==3) {
 				try {
