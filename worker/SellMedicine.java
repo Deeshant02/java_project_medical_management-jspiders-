@@ -3,6 +3,7 @@ package worker;
 import java.io.File;
 import java.util.Scanner;
 import datatypefordata.DataType;
+import serialno.BillSrNo;
 import serialno.Length;
 import java.io.FileWriter;
 
@@ -31,9 +32,17 @@ public class SellMedicine {
 			Length k = new Length();
 			int e = k.len();
 			
-			String fw = null;
+			String fw = "";
 			
 			boolean dyw = true;
+			double price = 0;
+			
+			System.out.println("Enter customer first name : ");
+			String fname = sc5.next();
+			
+			System.out.println("Enter customer last name : ");
+			String lname = sc5.next();
+			
 			while(dyw) {
 				System.out.print("Enter medicine name : ");
 				String med = sc5.next();
@@ -51,10 +60,12 @@ public class SellMedicine {
 					System.out.println("Medicine is not available in store !!!");
 				}
 				else {
+					
 					System.out.println("Enter quantity of medicine customer want : ");
 					int qt = sc5.nextInt();
-					fw = arr[ms].name + " " + arr[ms].cmp + " " + qt + " " + (qt*arr[ms].ppq) + " " + arr[ms].type + "\n";
+					fw += arr[ms].name + " " + arr[ms].cmp + " " + qt + " " + (qt*arr[ms].ppq) + " " + arr[ms].type;
 					arr[ms].qty -= qt;
+					
 					
 					f.createNewFile();
 					FileWriter fwt = new FileWriter("E:\\Eclipse\\Medical_Management_System_1.0\\src\\Data\\medicines_data\\data.txt");
@@ -64,18 +75,33 @@ public class SellMedicine {
 						fwt.write(wt);
 					}
 					
+					fwt.close();
+					price += qt*arr[ms].ppq;
+					
 					System.out.println("Customer want another medicine(y/n) : ");
-					char dywm = sc.next().charAt(0);
+					char dywm = sc5.next().charAt(0);
 					
 					if(dywm == 'y' || dywm == 'Y') {
 						dyw = true;
 					}
 					else if(dywm == 'n' || dywm == 'N') {
 						dyw = false;
-						fw += "\n";
+						
+						BillSrNo bs = new BillSrNo();
+						
+						int srno = bs.len();
+						
+						fw = srno + " " + fname + " " + lname + " " + fw + "\n";
+						
+						File f1 = new File("E:\\Eclipse\\Medical_Management_System_1.0\\src\\Data\\medicines_data\\bill.txt");
+						FileWriter fwb = new FileWriter(f1, true);
+						fwb.write(fw);
+						fwb.close();
+						
+						
 					}
 					
-					fwt.close();
+					
 				}
 			}
 		}
