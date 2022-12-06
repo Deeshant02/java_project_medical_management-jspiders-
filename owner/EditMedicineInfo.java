@@ -62,7 +62,7 @@ public class EditMedicineInfo {
 				for(int j=0;j<(e-1);j++) {
 					
 					fwt = arr[j].srn + " " + arr[j].name + " " + arr[j].cmp + " " + arr[j].qty + " " + arr[j].ppq + " " + arr[j].type + "\n";
-					System.out.println(arr[j].name);
+//					System.out.println(arr[j].name);
 					
 					fw.write(fwt);
 				}

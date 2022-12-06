@@ -30,6 +30,29 @@ public class RemoveMedicine {
 				i++;
 			}
 			
+			System.out.println("Medicine Name    : "+arr[srr].name);
+			System.out.println("Medicine Company : "+arr[srr].cmp);
+			System.out.println("Quantity 		 : "+arr[srr].qty);
+			System.out.println("Price/Quantity   : "+arr[srr].ppq);
+			System.out.println("Medicine Type    : "+arr[srr].type);
+			
+			Scanner sc6 = new Scanner(System.in);
+			
+			while(true) {
+				System.out.print("Are you sure you want to delete medicine from store(y/n) : ");
+				char ayw = sc6.next().charAt(0);
+				if(ayw=='y' || ayw=='Y') {
+					System.out.println("removing record ...");
+					break;
+				}
+				else if(ayw == 'n' || ayw=='N') {
+					return;
+				}
+				else {
+					System.out.println("Invalid Input !!!");
+				}
+			}
+			
 			for(int j = srr;j<(h-2);j++) {
 				arr[j].name = arr[j+1].name;
 				arr[j].cmp = arr[j+1].cmp;
@@ -47,7 +70,7 @@ public class RemoveMedicine {
 			for(int j=0;j<(h-2);j++) {
 				
 				fwt = arr[j].srn + " " + arr[j].name + " " + arr[j].cmp + " " + arr[j].qty + " " + arr[j].ppq + " " + arr[j].type + "\n";
-				System.out.println(arr[j].name);
+//				System.out.println(arr[j].name);
 				
 				fw.write(fwt);
 			}

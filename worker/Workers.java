@@ -13,10 +13,12 @@ public class Workers {
 		
 			if(ch4 == 1) {
 				SellMedicine sm = new SellMedicine();
+				System.out.println("\n\n\n");
 				sm.sellMed();
 			}
 			else if(ch4 == 2) {
 				ViewBill vb = new ViewBill();
+				System.out.println("\n\n\n");
 				vb.viewOldBills();
 			}
 			else if(ch4 == 3) {

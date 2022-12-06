@@ -23,7 +23,7 @@ public class ChangePassword extends Main implements I1 {
         	String cfps = sc2.next();
         	if(ps.compareTo(cfps)==0){
         		pass = ps;
-        		System.out.print("Password change sucessfully !!!");
+        		System.out.print("Password change sucessfully !!!\n\n\n");
         	}
         	else{
         		System.out.print("Password not matched !!!");

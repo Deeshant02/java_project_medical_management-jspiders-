@@ -1,5 +1,6 @@
 package worker;
 
+import java.io.Console;
 import java.io.File;
 import java.util.Scanner;
 
@@ -80,7 +81,8 @@ public class ViewBill {
 				j++;
 			}
 			Scanner sc5 = new Scanner(System.in);
-			System.out.print("\npress any key ...");
+			System.out.print("\npress any key + Enter to exit : ");
+			
 			sc5.next().charAt(0);
 		}
 		catch(Exception e) {

@@ -44,7 +44,7 @@ public class Main {
 	public static void main(String[] args) throws Exception {
 		Scanner sc = new Scanner(System.in);
 		while(true) {
-			System.out.print("\n\n\t\t1. Owner Section\n\t\t2. Worker Section\n\t\t3. Change Password\n\t\t4. Exit\n\n\n\t\tEnter Your Choice ?(1-3)        :    ");
+			System.out.print("\n\n\t\t1. Owner Section\n\t\t2. Worker Section\n\t\t3. List Of Medicines\n\t\t4. Change Password\n\t\t5. Exit\n\n\n\t\tEnter Your Choice ?(1-5)        :    ");
 			int choice = sc.nextInt();
 			if(choice==1) {
 				Owner b = new Owner();
@@ -55,17 +55,21 @@ public class Main {
 				w.workerSection();
 			}
 			else if(choice==3) {
+				
+			}
+			else if(choice==4) {
 				try {
 					Password p1 = new Password();
 					String pswd = p1.pass();
 					ChangePassword cp = new ChangePassword();
+					System.out.println("\n\n\n\n");
 					cp.changePass(pswd);
 				}
 				catch(Exception e) {
 					System.out.println(e);
 				}
 			}
-			else if(choice==4) {
+			else if(choice==5) {
 				System.exit(0);
 			}
 			else {

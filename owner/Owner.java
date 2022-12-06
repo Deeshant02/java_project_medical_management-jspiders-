@@ -17,11 +17,12 @@ public class Owner {
 		
 			if(choice3 == 1) {
 				AddNewMedicine c = new AddNewMedicine();
+				System.out.println("\n\n\n");
 				c.addMedicine();
 			}
 			else if(choice3 == 2) {
-				System.out.print("\n\n===========================================\n\tEdit Medicine Information\n===========================================\n");
-				System.out.print("\tEnter serial no. : ");
+				System.out.print("\n\n\n\n===========================================\n\tEdit Medicine Information\n===========================================\n");
+				System.out.print("\n\tEnter serial no. : ");
 				int sr = sc.nextInt();
 				EditMedicineInfo e = new EditMedicineInfo();
 				e.editMedcine(sr);
@@ -35,6 +36,7 @@ public class Owner {
 				g.removeMed(srr);
 			}
 			else if(choice3 == 4) {
+				System.out.println("\n\n\n");
 				break;
 			}
 			else if(choice3 == 5) {

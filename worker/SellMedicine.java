@@ -107,7 +107,11 @@ public class SellMedicine {
 						String nam = null;
 						i=0;
 						int j=0;
-						
+						System.out.println("\n\n");
+						for(int d=0;d<150;d++) {
+							System.out.print("=");
+						}
+						System.out.println("\n\t\t\t\t\t\t\t\tBill");
 						for(int d=0;d<150;d++) {
 							System.out.print("=");
 						}
@@ -168,6 +172,9 @@ public class SellMedicine {
 							}
 							j++;
 						}
+						
+						System.out.print("Press any key + Enter to exit : ");
+						sc5.next().charAt(0);
 						
 					}
 					
