@@ -14,7 +14,6 @@ public class Length {
     			sc4.nextLine();
     			a++;
     		}
-    		System.out.println(a);
     	}
     	catch(Exception e) {
     		System.out.println(e);

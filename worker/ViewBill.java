@@ -33,8 +33,16 @@ public class ViewBill {
 				nam = first[j]+" "+last[j];
 				System.out.print("\t"+nam);
 				
+				int dm = 0;
+				
 				while(sc.hasNext() && sc.hasNextInt() != true) {
 					arr[i] = new DataType();
+					
+					if(dm >= 1) {
+						for(int m=0;m<(8+nam.length());m++) {
+							System.out.print(" ");
+						}
+					}
 					
 //					System.out.println(sc.hasNextLine());
 					
@@ -67,9 +75,13 @@ public class ViewBill {
 					arr[i].type = sc.next().charAt(0);
 					System.out.println(arr[i].type);
 					i++;
+					dm++;
 				}
 				j++;
 			}
+			Scanner sc5 = new Scanner(System.in);
+			System.out.print("\npress any key ...");
+			sc5.next().charAt(0);
 		}
 		catch(Exception e) {
 			System.out.println(e);
