@@ -1,6 +1,8 @@
 package Main;
 
 import java.util.Scanner;
+
+import ListMed.ListMedicines;
 import password.*;
 import owner.Owner;
 import worker.Workers;
@@ -55,7 +57,8 @@ public class Main {
 				w.workerSection();
 			}
 			else if(choice==3) {
-				
+				ListMedicines lm = new ListMedicines();
+				lm.listMed();
 			}
 			else if(choice==4) {
 				try {
