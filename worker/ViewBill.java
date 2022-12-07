@@ -68,7 +68,7 @@ public class ViewBill {
 						System.out.print(" ");
 					}
 					arr[i].ppq = sc.nextDouble();
-					System.out.print(arr[i].ppq);
+					System.out.printf("%.2f",arr[i].ppq);
 					String str1 = ""+arr[i].ppq;
 					for(int m=0;m<(16-str1.length());m++) {
 						System.out.print(" ");

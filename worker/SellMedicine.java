@@ -6,11 +6,18 @@ import datatypefordata.DataType;
 import serialno.BillSrNo;
 import serialno.Length;
 import java.io.FileWriter;
+import Amount.Amount;
 
-public class SellMedicine {
+interface Sm{ // Abstraction
+	public void sellMed(); // method overriding(3. Polymorphism)
+}
+
+public class SellMedicine extends Amount implements Sm {
 	public void sellMed() {
 		try {
 			Scanner sc5 = new Scanner(System.in);
+			float amt=getSal();
+			System.out.println(amt);
 		
 			File f = new File("E:\\Eclipse\\Medical_Management_System_1.0\\src\\Data\\medicines_data\\data.txt");
 			Scanner sc = new Scanner(f);
@@ -42,10 +49,10 @@ public class SellMedicine {
 			boolean dyw = true;
 			double price = 0;
 			
-			System.out.println("Enter customer first name : ");
+			System.out.print("Enter customer first name : ");
 			String fname = sc5.next();
 			
-			System.out.println("Enter customer last name : ");
+			System.out.print("Enter customer last name : ");
 			String lname = sc5.next();
 			
 			while(dyw) {
@@ -66,11 +73,13 @@ public class SellMedicine {
 				}
 				else {
 					
-					System.out.println("Enter quantity of medicine customer want : ");
+					System.out.print("Enter quantity of medicine customer want : ");
 					int qt = sc5.nextInt();
 					fw += arr[ms].name + " " + arr[ms].cmp + " " + qt + " " + (qt*arr[ms].ppq) + " " + arr[ms].type + " ";
 					arr[ms].qty -= qt;
+					amt += (qt*arr[ms].ppq);
 					
+					System.out.println(amt);
 					
 					f.createNewFile();
 					FileWriter fwt = new FileWriter("E:\\Eclipse\\Medical_Management_System_1.0\\src\\Data\\medicines_data\\data.txt");
@@ -175,12 +184,13 @@ public class SellMedicine {
 						
 						System.out.print("Press any key + Enter to exit : ");
 						sc5.next().charAt(0);
-						
 					}
 					
 					
 				}
 			}
+			setSal(amt);
+			System.out.println(amt);
 		}
 		catch(Exception e) {
 			System.out.println(e);

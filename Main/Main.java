@@ -1,13 +1,13 @@
 package Main;
 
 import java.util.Scanner;
-
 import ListMed.ListMedicines;
 import password.*;
 import owner.Owner;
 import worker.Workers;
 
 public class Main {	
+	
 	static {
 		Scanner sc1 = new Scanner(System.in);
 		String pswd = "";
@@ -46,7 +46,11 @@ public class Main {
 	public static void main(String[] args) throws Exception {
 		Scanner sc = new Scanner(System.in);
 		while(true) {
-			System.out.print("\n\n\t\t1. Owner Section\n\t\t2. Worker Section\n\t\t3. List Of Medicines\n\t\t4. Change Password\n\t\t5. Exit\n\n\n\t\tEnter Your Choice ?(1-5)        :    ");
+			System.out.println("\n\n");
+			for(int a=0;a<76;a++) {
+				System.out.print("*");
+			}
+			System.out.print("\n\t\t1. Owner Section\n\t\t2. Worker Section\n\t\t3. List Of Medicines\n\t\t4. Change Password\n\t\t5. Exit\n\n\n\t\tEnter Your Choice ?(1-5)        :    ");
 			int choice = sc.nextInt();
 			if(choice==1) {
 				Owner b = new Owner();

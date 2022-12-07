@@ -1,18 +1,11 @@
-1 Dishant Mokal paracetamol crosin 10 25.0 t
-2 Dishant Mokal paracetamol crosin 10 25.0 t
-3 Dishant Mokal paracetamol crosin 10 25.0 t
-4 Krutika Mokal paracetamol crosin 15 37.5 t
-5 Vishal Ojha paracetamol crosin 4 10.0 t paracetamol crosin 3 7.5 t 
-6 Swapnil Chothve paracetamol crosin 6 15.0 t paracetamol crosin 7 17.5 t 
-7 Dishant Mokal paracetamol crosin 5 12.5 t paracetamol crosin 7 17.5 t 
-8 Dishant Mokal paracetamol crosin 3 7.5 t paracetamol crosin 3 7.5 t 
-9 Dishant Mokal paracetamol crosin 1 2.5 t paracetamol crosin 2 5.0 t 
-10 Dish sdss paracetamol crosin 2 5.0 t paracetamol crosin 1 2.5 t 
-11 dsdsai sfasd paracetamol crosin 2 5.0 t paracetamol crosin 1 2.5 t 
-12 sdfasf dsafsda paracetamol crosin 1 2.5 t paracetamol crosin 1 2.5 t 
-13 sdfaf dsfsd paracetamol crosin 1 2.5 t paracetamol crosin 1 2.5 t 
-14 Dishant Mokal paracetamol crosin 1 2.5 t paracetamol crosin 1 2.5 t paracetamol crosin 1 2.5 t 
-15 Dishant Mokal paracetamol crosin 1 3.5 t 
-16 Dishant Mokal paracetamol crosin 1 3.5 t 
-17 Dishant Mokal paracetamol crosin 1 3.5 t 
-18 Dishant Mokal paracetamol crosin 1 3.5 t 
+1 Dishant Mokal Paracetamol Tylenol 7 16.8 t 
+2 Rutvik Mokal Paracetamol Tylenol 3 7.199999999999999 t 
+3 Dishant Mokal Paracetamol Tylenol 3 7.199999999999999 t 
+4 Dishant Mokal Paracetamol Tylenol 3 7.199999999999999 t 
+5 dishant mokal Paracetamol Tylenol 3 7.199999999999999 t 
+6 dishant mokal Paracetamol Tylenol 3 7.199999999999999 t 
+7 dishant mokal Paracetamol Tylenol 5 12.0 t 
+8 Dishant Mokal Paracetamol Tylenol 3 7.199999999999999 t 
+9 Dishant MOkal Paracetamol Tylenol 3 7.199999999999999 t 
+10 dishant mokal Paracetamol Tylenol 3 7.199999999999999 t 
+11 Dishant Mokal Paracetamol Tylenol 3 7.199999999999999 t 
