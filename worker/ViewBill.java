@@ -3,10 +3,12 @@ package worker;
 import java.io.Console;
 import java.io.File;
 import java.util.Scanner;
+import java.text.DecimalFormat;
 
 import datatypefordata.DataType;
 
 public class ViewBill {
+	private static final DecimalFormat df = new DecimalFormat("0.00");
 	public void viewOldBills() {
 		try {
 			File f = new File("E:\\Eclipse\\Medical_Management_System_1.0\\src\\Data\\medicines_data\\bill.txt");
@@ -68,8 +70,8 @@ public class ViewBill {
 						System.out.print(" ");
 					}
 					arr[i].ppq = sc.nextDouble();
-					System.out.printf("%.2f",arr[i].ppq);
-					String str1 = ""+arr[i].ppq;
+					System.out.printf(df.format(arr[i].ppq));
+					String str1 = ""+df.format(arr[i].ppq);
 					for(int m=0;m<(16-str1.length());m++) {
 						System.out.print(" ");
 					}

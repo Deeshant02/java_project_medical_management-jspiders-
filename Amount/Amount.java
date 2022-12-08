@@ -3,7 +3,9 @@ package Amount;
 // Amount class is a super class of SellMedicine and Qwner class ==> hierarchical inheritance(2. Inheritance)
 
 public class Amount {
-	private static float amount=0;
+	private static float amount = 0;
+	
+	ReadWriteAmount rwa = new ReadWriteAmount();
 	
 	// Getter method(1. Encapsulation)
 	public float getSal() {
@@ -13,6 +15,6 @@ public class Amount {
 	// Setter method(1. Encapsulation)
 	public void setSal(float amt) {
 		amount = amt;
-		System.out.println(amount);
+		rwa.writeAmount(amt);
 	}
 }

@@ -5,6 +5,7 @@ import ListMed.ListMedicines;
 import password.*;
 import owner.Owner;
 import worker.Workers;
+import Amount.ReadWriteAmount;
 
 public class Main {	
 	
@@ -45,6 +46,8 @@ public class Main {
 	
 	public static void main(String[] args) throws Exception {
 		Scanner sc = new Scanner(System.in);
+		ReadWriteAmount rwa = new ReadWriteAmount();
+		rwa.readAmount();
 		while(true) {
 			System.out.println("\n\n");
 			for(int a=0;a<76;a++) {

@@ -1,2 +1,4 @@
-1 Paracetamol Tylenol 961 2.4 t
+1 Paracetamol Tylenol 934 2.4 t
 2 Adulasa IndiaMART 102 60.23 l
+3 crocine xyz 10 10.0 t
+4 Crosin xyz 269 3.54 t

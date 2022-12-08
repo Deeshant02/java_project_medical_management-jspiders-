@@ -7,17 +7,21 @@ import serialno.BillSrNo;
 import serialno.Length;
 import java.io.FileWriter;
 import Amount.Amount;
+import java.text.DecimalFormat;
 
 interface Sm{ // Abstraction
 	public void sellMed(); // method overriding(3. Polymorphism)
 }
 
 public class SellMedicine extends Amount implements Sm {
+	
+	private static final DecimalFormat df = new DecimalFormat("0.00");
+	
 	public void sellMed() {
 		try {
 			Scanner sc5 = new Scanner(System.in);
 			float amt=getSal();
-			System.out.println(amt);
+			
 		
 			File f = new File("E:\\Eclipse\\Medical_Management_System_1.0\\src\\Data\\medicines_data\\data.txt");
 			Scanner sc = new Scanner(f);
@@ -75,7 +79,7 @@ public class SellMedicine extends Amount implements Sm {
 					
 					System.out.print("Enter quantity of medicine customer want : ");
 					int qt = sc5.nextInt();
-					fw += arr[ms].name + " " + arr[ms].cmp + " " + qt + " " + (qt*arr[ms].ppq) + " " + arr[ms].type + " ";
+					fw += arr[ms].name + " " + arr[ms].cmp + " " + qt + " " + df.format((qt*arr[ms].ppq)) + " " + arr[ms].type + " ";
 					arr[ms].qty -= qt;
 					amt += (qt*arr[ms].ppq);
 					
@@ -190,7 +194,7 @@ public class SellMedicine extends Amount implements Sm {
 				}
 			}
 			setSal(amt);
-			System.out.println(amt);
+			
 		}
 		catch(Exception e) {
 			System.out.println(e);
