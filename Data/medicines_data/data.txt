@@ -1,4 +1,8 @@
-1 Paracetamol Tylenol 934 2.4 t
+1 Paracetamol Tylenol 931 2.4 t
 2 Adulasa IndiaMART 102 60.23 l
-3 crocine xyz 10 10.0 t
-4 Crosin xyz 269 3.54 t
+3 crocin GSK 1000 5.0 t
+4 Busulfan Aspen 1000 12.35 t
+5 Verifica_m-500 LUPIN_LTD 1000 11.56 T
+6 Vylda_m-850 Emcure 2000 16.37 t
+7 Betasart-40 Neobeat_LTD 3000 20.45 t
+8 Stobal SBL_LTD 100 133.46 l

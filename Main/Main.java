@@ -41,7 +41,18 @@ public class Main {
 	}
 	
 	static {
-		System.out.print("****************************************************************************\n\t\tWelcome To Good Life Pharma Medical\n****************************************************************************\n");
+		System.out.print("Loading ");
+		try {
+			for(int i=0;i<4;i++) {
+				Thread.sleep(1000);
+				System.out.print(". ");
+			}
+		}
+		catch(Exception e) {
+			System.out.println(e);
+		}
+		
+		System.out.print("\n\n\n\n\n****************************************************************************\n\t\tWelcome To Good Life Pharma Medical\n****************************************************************************\n");
 	}
 	
 	public static void main(String[] args) throws Exception {

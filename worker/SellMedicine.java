@@ -82,8 +82,9 @@ public class SellMedicine extends Amount implements Sm {
 					fw += arr[ms].name + " " + arr[ms].cmp + " " + qt + " " + df.format((qt*arr[ms].ppq)) + " " + arr[ms].type + " ";
 					arr[ms].qty -= qt;
 					amt += (qt*arr[ms].ppq);
+					price += (qt*arr[ms].ppq);
 					
-					System.out.println(amt);
+					System.out.println("Total Amount : "+df.format(price));
 					
 					f.createNewFile();
 					FileWriter fwt = new FileWriter("E:\\Eclipse\\Medical_Management_System_1.0\\src\\Data\\medicines_data\\data.txt");

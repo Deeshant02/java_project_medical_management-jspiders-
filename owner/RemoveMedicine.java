@@ -32,7 +32,7 @@ public class RemoveMedicine {
 			
 			System.out.println("Medicine Name    : "+arr[srr].name);
 			System.out.println("Medicine Company : "+arr[srr].cmp);
-			System.out.println("Quantity 		 : "+arr[srr].qty);
+			System.out.println("Quantity 	 : "+arr[srr].qty);
 			System.out.println("Price/Quantity   : "+arr[srr].ppq);
 			System.out.println("Medicine Type    : "+arr[srr].type);
 			
@@ -42,7 +42,11 @@ public class RemoveMedicine {
 				System.out.print("Are you sure you want to delete medicine from store(y/n) : ");
 				char ayw = sc6.next().charAt(0);
 				if(ayw=='y' || ayw=='Y') {
-					System.out.println("removing record ...");
+					System.out.print("removing record ");
+					for(int z=0;z<4;z++) {
+						Thread.sleep(500);
+						System.out.print(".");
+					}
 					break;
 				}
 				else if(ayw == 'n' || ayw=='N') {
