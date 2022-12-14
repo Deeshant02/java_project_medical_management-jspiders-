@@ -83,9 +83,9 @@ public class ViewBill {
 				j++;
 			}
 			Scanner sc5 = new Scanner(System.in);
-			System.out.print("\npress any key + Enter to exit : ");
+			System.out.print("\npress Enter to exit : ");
 			
-			sc5.next().charAt(0);
+			sc5.nextLine();
 		}
 		catch(Exception e) {
 			System.out.println(e);

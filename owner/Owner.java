@@ -52,8 +52,9 @@ public class Owner extends Amount implements Own {
 					System.out.print("-");
 				}
 				System.out.println();
-				System.out.println("\n\nPress any key + Enter to exit ...");
-				sc.next().charAt(0);
+				System.out.println("\n\nPress Enter to exit ...");
+				sc.nextLine();
+				sc.nextLine();
 			}
 			else if(choice3 == 5) {
 				System.out.println("\n\n\n");

@@ -187,8 +187,8 @@ public class SellMedicine extends Amount implements Sm {
 							j++;
 						}
 						
-						System.out.print("Press any key + Enter to exit : ");
-						sc5.next().charAt(0);
+						System.out.print("Press Enter to exit : ");
+						sc5.nextLine();
 					}
 					
 					

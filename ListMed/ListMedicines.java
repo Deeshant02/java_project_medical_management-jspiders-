@@ -74,8 +74,8 @@ public class ListMedicines {
 				System.out.print(arr[j].type);
 			}
 			Scanner sc7 = new Scanner(System.in);
-			System.out.print("\n\npress any key + Enter to go back ... ");
-			sc7.next().charAt(0);
+			System.out.print("\n\npress Enter to go back ... ");
+			sc7.nextLine();
 			System.out.println("\n\n\n\n\n");
 			
 		}
